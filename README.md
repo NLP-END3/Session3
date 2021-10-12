@@ -32,3 +32,6 @@ Write a neural network that can:
 
 
 ![image](https://user-images.githubusercontent.com/30425824/136686451-088e9e4b-615a-4cdd-b7fc-988cbff896ef.png)
+
+## Reference
+1. https://github.com/pytorch/examples/blob/master/mnist/main.py
