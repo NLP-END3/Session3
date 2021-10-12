@@ -35,3 +35,4 @@ Write a neural network that can:
 
 ## Reference
 1. https://github.com/pytorch/examples/blob/master/mnist/main.py
+2. https://pytorch.org/tutorials/intermediate/tensorboard_tutorial.html
