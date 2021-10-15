@@ -1,4 +1,5 @@
-# Session3
+# TSAI - END3 Session 3 Assignment
+*Group Members: Dhruba Adhikary, Phani Nandula, Prateek Maheshwari, Sujit Ojha*
 
 ## Problem Statement
 
