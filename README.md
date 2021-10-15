@@ -3,13 +3,14 @@
 
 ## Problem Statement
 
-Write a neural network that can:
+**Write a neural network that can:**
 1. take 2 inputs:  
     1. an image from the MNIST dataset (say 5), and  
     2. a random number between 0 and 9, (say 7)
 2. and gives two outputs:  
     1. the "number" that was represented by the MNIST image (predict 5), and  
     2. the "sum" of this number with the random number and the input image to the network (predict 5 + 7 = 12)
+    ![assignment_network](images/assign-1.png)
 3. you can mix fully connected layers and convolution layers  
 4. you can use one-hot encoding to represent the random number input as well as the "summed" output.  
     a. Random number (7) can be represented as 0 0 0 0 0 0 0 1 0 0  
@@ -18,17 +19,20 @@ Write a neural network that can:
         2. 0b1101 (remember that 4 digits in binary can at max represent 15, so we may need to go for 5 digits. i.e. 10010
 
 **Your code MUST be:**
-1. well documented (via readme file on github and comments in the code)  
+1. well documented (via readme file on github and comments in the code)
 2. must mention the data representation
-3. must mention your data generation strategy (basically the class/method you are using for random number generation)  
-5. must mention how you have combined the two inputs (basically which layer you are combining)  
-7. must mention how you are evaluating your results   
-8. must mention "what" results you finally got and how did you evaluate your results  
-9. must mention what loss function you picked and why!  
-10. **training MUST happen on the GPU** **--> NOT INCORPORATED IN THE CODE**  
-11. Accuracy is not really important for the SUM  
+3. must mention your data generation strategy (basically the class/method you are using for random number generation)
+4. must mention how you have combined the two inputs (basically which layer you are combining)
+5. must mention how you are evaluating your results 
+6. must mention "what" results you finally got and how did you evaluate your results
+7. must mention what loss function you picked and why!
+8. training MUST happen on the GPU
+9. Accuracy is not really important for the SUM
 
 
+**Once done, upload the code with short training logs in the readme file from colab to GitHub, and share the GitHub link (public repository)**
+
+## Solution & Discussion
 Two methods were tried in this study with the same hyperparameters (```Optimizer = Adam, Epochs = 20, Leraning_rate = 0.001, batch_size = 1000 ```)
 
 a. ``` Method1: Neural Network with **Convolutional Layers & Fully Connected Layers**```  
