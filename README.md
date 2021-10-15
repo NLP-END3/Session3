@@ -29,7 +29,15 @@ Write a neural network that can:
 ![image](https://user-images.githubusercontent.com/30425824/137435360-86008d4d-d000-48e6-b2bd-bb09a61ec4f5.png)
 
 5. must mention how you have combined the two inputs (basically which layer you are combining)  
-![image](https://user-images.githubusercontent.com/30425824/137436572-8f274f50-0b73-4dcf-87b4-42d1bd56494d.png)
+
+Two methods were tried in this study with the same hyperparameters (```Optimizer = Adam, Epochs = 20, Leraning_rate = 0.001, batch_size = 1000 ```)
+
+a. ``` Method1: Neural Network with **Convolutional Layers & Fully Connected Layers**```  
+![image](https://user-images.githubusercontent.com/30425824/137436572-8f274f50-0b73-4dcf-87b4-42d1bd56494d.png)  
+
+b. ``` Method2: Neural Network with **Only Fully Connected Layers**```  
+
+![image](https://user-images.githubusercontent.com/30425824/137449271-de53444e-df92-4e8c-b580-3ff8f61c7592.png)
 
 7. must mention how you are evaluating your results   
 8. must mention "what" results you finally got and how did you evaluate your results  
@@ -37,8 +45,7 @@ Write a neural network that can:
 10. **training MUST happen on the GPU** **--> NOT INCORPORATED IN THE CODE**  
 11. Accuracy is not really important for the SUM  
 
-
-![image](https://user-images.githubusercontent.com/30425824/136686451-088e9e4b-615a-4cdd-b7fc-988cbff896ef.png)
+![image](https://user-images.githubusercontent.com/30425824/137450278-e11adae4-c25b-42ce-95b3-5ce2fdce3786.png)
 
 ## Reference
 1. https://github.com/pytorch/examples/blob/master/mnist/main.py
