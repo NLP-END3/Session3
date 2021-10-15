@@ -26,6 +26,38 @@
 5. must mention how you are evaluating your results 
 6. must mention "what" results you finally got and how did you evaluate your results
 7. must mention what loss function you picked and why!  
+8. training MUST happen on the GPU
+9. Accuracy is not really important for the SUM
+
+
+**Once done, upload the code with short training logs in the readme file from colab to GitHub, and share the GitHub link (public repository)**
+
+## Solution & Discussion
+- **Two notebooks with results**
+
+    | Methods        | Notebook           | Results: Accuracies  |
+    |:----------------------------: |:---------------------:| :--------|
+    | Convolutional Layers with Fully connected Layer | [Convolutional Layers + FC](Session3_Pytorch101_ver3.ipynb) |  Image  = 99% and Sum Label  = 99% |
+    | Fully connected Layers only | [Fully Connected Layers](Session3_Pytorch101_ver4_2Methods.ipynb) | Image Label = 98% and Sum Label = 97% |
+
+- **Two methods were tried in this study are**
+
+    a. Method1: Neural Network with **Convolutional Layers & Fully Connected Layers**
+    ![image](https://user-images.githubusercontent.com/30425824/137436572-8f274f50-0b73-4dcf-87b4-42d1bd56494d.png) 
+
+    b. Method2: Neural Network with **Only Fully Connected Layers** ```  
+    ![image](https://user-images.githubusercontent.com/30425824/137449271-de53444e-df92-4e8c-b580-3ff8f61c7592.png)
+
+- **Data Representation**
+    ![image](https://user-images.githubusercontent.com/30425824/137435089-b231d73c-ee7e-406e-82d1-de975b62caa6.png)
+
+
+![image](https://user-images.githubusercontent.com/30425824/137435132-41627581-b165-4165-a108-a951ff964244.png)
+![image](https://user-images.githubusercontent.com/30425824/137435360-86008d4d-d000-48e6-b2bd-bb09a61ec4f5.png)
+ 
+
+![image](https://user-images.githubusercontent.com/30425824/137450278-e11adae4-c25b-42ce-95b3-5ce2fdce3786.png)
+
 
 - ```Negative Log Likelihood Loss``` is used in the model since model is predicting a multiclass output. We calculate loss separately for each output:
 Loss1 --> Loss between actual image label and predicted image label
@@ -35,30 +67,6 @@ Total Loss = Loss1 + Loss2
 - ```Cross Entropy Loss``` could also be used but we need to use ```softmax``` in the prediction layer.
 - ```Binary Cross Entropy Loss``` couldnt be used here since we have more than 2 labels in each of the outputs.  
 - ```Mean Squared Loss``` If used, it would converge in large number of epochs as it would penalise more the  deviation from the ground truth.
-
-9. training MUST happen on the GPU
-10. Accuracy is not really important for the SUM
-
-
-**Once done, upload the code with short training logs in the readme file from colab to GitHub, and share the GitHub link (public repository)**
-
-## Solution & Discussion
-- Two notebooks [Convolutional Layers + FC](Session3_Pytorch101_ver3.ipynb) and [Fully Connected Layers](Session3_Pytorch101_ver4_2Methods_OnlyFC_run.ipynb) 
-
-- Two methods were tried in this study with the same hyperparameters (```Optimizer = Adam, Epochs = 20, Leraning_rate = 0.001, batch_size = 1000 ```) 
-
-a. ``` Method1: Neural Network with **Convolutional Layers & Fully Connected Layers**```  
-
-
-b. ``` Method2: Neural Network with **Only Fully Connected Layers**```  
-![image](https://user-images.githubusercontent.com/30425824/136686498-1fb5e23f-1483-4ca9-9e7d-fc99c9536494.png)
-
-![image](https://user-images.githubusercontent.com/30425824/137435089-b231d73c-ee7e-406e-82d1-de975b62caa6.png)
-![image](https://user-images.githubusercontent.com/30425824/137435132-41627581-b165-4165-a108-a951ff964244.png)
-![image](https://user-images.githubusercontent.com/30425824/137435360-86008d4d-d000-48e6-b2bd-bb09a61ec4f5.png)
-![image](https://user-images.githubusercontent.com/30425824/137436572-8f274f50-0b73-4dcf-87b4-42d1bd56494d.png)  
-![image](https://user-images.githubusercontent.com/30425824/137449271-de53444e-df92-4e8c-b580-3ff8f61c7592.png)
-![image](https://user-images.githubusercontent.com/30425824/137450278-e11adae4-c25b-42ce-95b3-5ce2fdce3786.png)
 
 
 ## Reference
