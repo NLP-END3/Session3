@@ -1,5 +1,5 @@
 # TSAI - END3 Session 3 Assignment
-*Group Members: Dhruba Adhikary, Phani Nandula, Sujit Ojha*
+*Group Members: Dhruba Adhikary, Phani Nandula, Prateek Maheshwari, Sujit Ojha*
 
 ## Problem Statement
 
@@ -10,7 +10,7 @@
 2. and gives two outputs:  
     1. the "number" that was represented by the MNIST image (predict 5), and  
     2. the "sum" of this number with the random number and the input image to the network (predict 5 + 7 = 12)
-    ![assignment_network](images/assign-1.png)
+    <img src="./images/assign-1.png" alt="assignment_network" width="500"/>
 3. you can mix fully connected layers and convolution layers  
 4. you can use one-hot encoding to represent the random number input as well as the "summed" output.  
     a. Random number (7) can be represented as 0 0 0 0 0 0 0 1 0 0  
@@ -52,7 +52,7 @@ a. ``` Method1: Neural Network with **Convolutional Layers & Fully Connected Lay
 
 b. ``` Method2: Neural Network with **Only Fully Connected Layers**```  
 ![image](https://user-images.githubusercontent.com/30425824/136686498-1fb5e23f-1483-4ca9-9e7d-fc99c9536494.png)
-<img src="https://user-images.githubusercontent.com/30425824/136686498-1fb5e23f-1483-4ca9-9e7d-fc99c9536494.png" alt="drawing" width="500"/>
+
 ![image](https://user-images.githubusercontent.com/30425824/137435089-b231d73c-ee7e-406e-82d1-de975b62caa6.png)
 ![image](https://user-images.githubusercontent.com/30425824/137435132-41627581-b165-4165-a108-a951ff964244.png)
 ![image](https://user-images.githubusercontent.com/30425824/137435360-86008d4d-d000-48e6-b2bd-bb09a61ec4f5.png)
