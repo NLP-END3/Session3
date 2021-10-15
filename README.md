@@ -33,8 +33,9 @@
 **Once done, upload the code with short training logs in the readme file from colab to GitHub, and share the GitHub link (public repository)**
 
 ## Solution & Discussion
-- Two notebooks [Convolutional Layers + FC](Session3_Pytorch101_ver3.ipynb) and [Fully Connected Layers](Session3_Pytorch101_ver4_2Methods_OnlyFC_run.ipynb)
-Two methods were tried in this study with the same hyperparameters (```Optimizer = Adam, Epochs = 20, Leraning_rate = 0.001, batch_size = 1000 ```)
+- Two notebooks [Convolutional Layers + FC](Session3_Pytorch101_ver3.ipynb) and [Fully Connected Layers](Session3_Pytorch101_ver4_2Methods_OnlyFC_run.ipynb) 
+
+- Two methods were tried in this study with the same hyperparameters (```Optimizer = Adam, Epochs = 20, Leraning_rate = 0.001, batch_size = 1000 ```) 
 
 a. ``` Method1: Neural Network with **Convolutional Layers & Fully Connected Layers**```  
 
