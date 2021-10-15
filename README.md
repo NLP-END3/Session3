@@ -21,14 +21,19 @@ Write a neural network that can:
 
 **Your code MUST be:**
 1. well documented (via readme file on github and comments in the code)  
-2. must mention the data representation  
+2. must mention the data representation
+![image](https://user-images.githubusercontent.com/30425824/137435089-b231d73c-ee7e-406e-82d1-de975b62caa6.png)
+![image](https://user-images.githubusercontent.com/30425824/137435132-41627581-b165-4165-a108-a951ff964244.png)
+
 3. must mention your data generation strategy (basically the class/method you are using for random number generation)  
-4. must mention how you have combined the two inputs (basically which layer you are combining)  
-5. must mention how you are evaluating your results   
-6. must mention "what" results you finally got and how did you evaluate your results  
-7. must mention what loss function you picked and why!  
-8. **training MUST happen on the GPU** **--> NOT INCORPORATED IN THE CODE**  
-9. Accuracy is not really important for the SUM  
+![image](https://user-images.githubusercontent.com/30425824/137435360-86008d4d-d000-48e6-b2bd-bb09a61ec4f5.png)
+
+5. must mention how you have combined the two inputs (basically which layer you are combining)  
+6. must mention how you are evaluating your results   
+7. must mention "what" results you finally got and how did you evaluate your results  
+8. must mention what loss function you picked and why!  
+9. **training MUST happen on the GPU** **--> NOT INCORPORATED IN THE CODE**  
+10. Accuracy is not really important for the SUM  
 
 
 ![image](https://user-images.githubusercontent.com/30425824/136686451-088e9e4b-615a-4cdd-b7fc-988cbff896ef.png)
