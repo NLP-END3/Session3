@@ -42,13 +42,16 @@
 
 - **Two methods were tried in this study are**
 
-    a. Method1: Neural Network with **Convolutional Layers & Fully Connected Layers**
-    ![image](https://user-images.githubusercontent.com/30425824/137436572-8f274f50-0b73-4dcf-87b4-42d1bd56494d.png) 
+    a. Method1: Neural Network with **Convolutional Layers & Fully Connected Layers**  
 
-    b. Method2: Neural Network with **Only Fully Connected Layers** ```  
-    ![image](https://user-images.githubusercontent.com/30425824/137449271-de53444e-df92-4e8c-b580-3ff8f61c7592.png)
+    <img src="https://user-images.githubusercontent.com/30425824/137436572-8f274f50-0b73-4dcf-87b4-42d1bd56494d.png" alt="Method1" width="600"/>
 
-- **Data Representation**  
+    b. Method2: Neural Network with **Only Fully Connected Layers** 
+
+    <img src="https://user-images.githubusercontent.com/30425824/137449271-de53444e-df92-4e8c-b580-3ff8f61c7592.png" alt="Method2" width="600"/>
+
+- **Data Representation**   
+
     <img src="https://user-images.githubusercontent.com/30425824/137435089-b231d73c-ee7e-406e-82d1-de975b62caa6.png" alt="DataRepresentation" width="600"/>
 
 
