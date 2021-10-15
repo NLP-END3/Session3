@@ -25,9 +25,18 @@
 4. must mention how you have combined the two inputs (basically which layer you are combining)
 5. must mention how you are evaluating your results 
 6. must mention "what" results you finally got and how did you evaluate your results
-7. must mention what loss function you picked and why!
-8. training MUST happen on the GPU
-9. Accuracy is not really important for the SUM
+7. must mention what loss function you picked and why!  
+
+- ```Negative Log Likelihood Loss``` is used in the model since model is predicting a multiclass output. We calculate loss separately for each output:
+Loss1 --> Loss between actual image label and predicted image label
+Loss2 --> Loss between actual sum label and predicted sum label
+Total Loss = Loss1 + Loss2  
+
+- ```Cross Entropy Loss``` could also be used but we need to use ```softmax``` in the prediction layer.
+- ```Binary Cross Entropy Loss``` couldnt be used here since we have more than 2 labels in each of the outputs.  
+
+9. training MUST happen on the GPU
+10. Accuracy is not really important for the SUM
 
 
 **Once done, upload the code with short training logs in the readme file from colab to GitHub, and share the GitHub link (public repository)**
@@ -42,12 +51,14 @@ a. ``` Method1: Neural Network with **Convolutional Layers & Fully Connected Lay
 
 b. ``` Method2: Neural Network with **Only Fully Connected Layers**```  
 ![image](https://user-images.githubusercontent.com/30425824/136686498-1fb5e23f-1483-4ca9-9e7d-fc99c9536494.png)
+<img src="https://user-images.githubusercontent.com/30425824/136686498-1fb5e23f-1483-4ca9-9e7d-fc99c9536494.png" alt="drawing" width="500"/>
 ![image](https://user-images.githubusercontent.com/30425824/137435089-b231d73c-ee7e-406e-82d1-de975b62caa6.png)
 ![image](https://user-images.githubusercontent.com/30425824/137435132-41627581-b165-4165-a108-a951ff964244.png)
 ![image](https://user-images.githubusercontent.com/30425824/137435360-86008d4d-d000-48e6-b2bd-bb09a61ec4f5.png)
 ![image](https://user-images.githubusercontent.com/30425824/137436572-8f274f50-0b73-4dcf-87b4-42d1bd56494d.png)  
 ![image](https://user-images.githubusercontent.com/30425824/137449271-de53444e-df92-4e8c-b580-3ff8f61c7592.png)
 ![image](https://user-images.githubusercontent.com/30425824/137450278-e11adae4-c25b-42ce-95b3-5ce2fdce3786.png)
+
 
 ## Reference
 1. https://github.com/pytorch/examples/blob/master/mnist/main.py
