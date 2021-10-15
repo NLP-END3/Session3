@@ -29,11 +29,13 @@ Write a neural network that can:
 ![image](https://user-images.githubusercontent.com/30425824/137435360-86008d4d-d000-48e6-b2bd-bb09a61ec4f5.png)
 
 5. must mention how you have combined the two inputs (basically which layer you are combining)  
-6. must mention how you are evaluating your results   
-7. must mention "what" results you finally got and how did you evaluate your results  
-8. must mention what loss function you picked and why!  
-9. **training MUST happen on the GPU** **--> NOT INCORPORATED IN THE CODE**  
-10. Accuracy is not really important for the SUM  
+![image](https://user-images.githubusercontent.com/30425824/137436572-8f274f50-0b73-4dcf-87b4-42d1bd56494d.png)
+
+7. must mention how you are evaluating your results   
+8. must mention "what" results you finally got and how did you evaluate your results  
+9. must mention what loss function you picked and why!  
+10. **training MUST happen on the GPU** **--> NOT INCORPORATED IN THE CODE**  
+11. Accuracy is not really important for the SUM  
 
 
 ![image](https://user-images.githubusercontent.com/30425824/136686451-088e9e4b-615a-4cdd-b7fc-988cbff896ef.png)
