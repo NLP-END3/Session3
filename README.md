@@ -44,11 +44,11 @@
 
     a. Method1: Neural Network with **Convolutional Layers & Fully Connected Layers**  
 
-    <img src="https://user-images.githubusercontent.com/30425824/137436572-8f274f50-0b73-4dcf-87b4-42d1bd56494d.png" alt="Method1" width="600"/>
+    <img src="https://user-images.githubusercontent.com/30425824/137436572-8f274f50-0b73-4dcf-87b4-42d1bd56494d.png" alt="Method1" width="800"/>
 
     b. Method2: Neural Network with **Only Fully Connected Layers** 
 
-    <img src="https://user-images.githubusercontent.com/30425824/137449271-de53444e-df92-4e8c-b580-3ff8f61c7592.png" alt="Method2" width="600"/>
+    <img src="https://user-images.githubusercontent.com/30425824/137449271-de53444e-df92-4e8c-b580-3ff8f61c7592.png" alt="Method2" width="800"/>
 
 - **Data Representation**   
 
