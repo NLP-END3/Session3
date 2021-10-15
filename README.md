@@ -34,6 +34,7 @@ Total Loss = Loss1 + Loss2
 
 - ```Cross Entropy Loss``` could also be used but we need to use ```softmax``` in the prediction layer.
 - ```Binary Cross Entropy Loss``` couldnt be used here since we have more than 2 labels in each of the outputs.  
+- ```Mean Squared Loss``` If used, it would converge in large number of epochs as it would penalise more the  deviation from the ground truth.
 
 9. training MUST happen on the GPU
 10. Accuracy is not really important for the SUM
