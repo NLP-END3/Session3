@@ -85,7 +85,8 @@
         if self.transform:
             sample_image = self.transform(sample_image)
 
-        sample = (sample_image,F.one_hot(torch.tensor(randomNumber),num_classes=10), label,label+randomNumber)
+        sample = (sample_image,F.one_hot(torch.tensor(randomNumber),num_classes=10), 
+                label,label+randomNumber)
         return sample
 
     def __len__(self):
