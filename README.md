@@ -56,7 +56,7 @@
     <img src="https://user-images.githubusercontent.com/30425824/137435132-41627581-b165-4165-a108-a951ff964244.png" alt="DataRepresentation" width="800"/>
 
  
-- **Data Generation Strategy**
+- **Data Generation Strategy**  
     Leveraged torchvision mnist dataset and defined the custom data class to generate the random number with its one hot encoding.
     ```Python
     # Loading the mnist dataset from pytorch - torchvision
