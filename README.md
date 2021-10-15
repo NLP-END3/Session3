@@ -57,46 +57,46 @@
 
  
 - **Data Generation Strategy**
-    - Leveraged torchvision mnist dataset and defined the custom data class to generate the random number with its one hot encoding.
-        ```Python
-        # Loading the mnist dataset from pytorch - torchvision
-        transform=transforms.Compose([
-            transforms.ToTensor(),
-            transforms.Normalize((0.1307,), (0.3081,))
-            ])
+    Leveraged torchvision mnist dataset and defined the custom data class to generate the random number with its one hot encoding.
+    ```Python
+    # Loading the mnist dataset from pytorch - torchvision
+    transform=transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Normalize((0.1307,), (0.3081,))
+        ])
 
-        mnist_train = datasets.MNIST('../data',train=True,download=True) # Train dataset
-        mnist_test = datasets.MNIST('./data',train=False,download=True) # Test dataset
+    mnist_train = datasets.MNIST('../data',train=True,download=True) # Train dataset
+    mnist_test = datasets.MNIST('./data',train=False,download=True) # Test dataset
 
-        # Custom Data Class
-        from torch.utils.data import Dataset
-        from random import randrange
+    # Custom Data Class
+    from torch.utils.data import Dataset
+    from random import randrange
 
-        # Dataset is there to be able to interact with DataLoader
+    # Dataset is there to be able to interact with DataLoader
 
-        class MyDataset(Dataset):
-        def __init__(self, inpDataset, transform):
-            self.inpDataset = inpDataset
-            self.transform = transform
+    class MyDataset(Dataset):
+    def __init__(self, inpDataset, transform):
+        self.inpDataset = inpDataset
+        self.transform = transform
 
-        def __getitem__(self, index):
-            randomNumber = randrange(10)
-            sample_image, label = self.inpDataset[index]
-            if self.transform:
-                sample_image = self.transform(sample_image)
+    def __getitem__(self, index):
+        randomNumber = randrange(10)
+        sample_image, label = self.inpDataset[index]
+        if self.transform:
+            sample_image = self.transform(sample_image)
 
-            sample = (sample_image,F.one_hot(torch.tensor(randomNumber),num_classes=10), label,label+randomNumber)
-            return sample
+        sample = (sample_image,F.one_hot(torch.tensor(randomNumber),num_classes=10), label,label+randomNumber)
+        return sample
 
-        def __len__(self):
-            return len(self.inpDataset)
+    def __len__(self):
+        return len(self.inpDataset)
 
-        myData_train = MyDataset(mnist_train,transform) 
-        myData_test = MyDataset(mnist_test,transform)
+    myData_train = MyDataset(mnist_train,transform) 
+    myData_test = MyDataset(mnist_test,transform)
 
-        # One Sample output
-        # (torch.Size([1, 28, 28]), tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 1]), 5, 14)
-        ```
+    # One Sample output
+    # (torch.Size([1, 28, 28]), tensor([0, 0, 0, 0, 0, 0, 0, 0, 0, 1]), 5, 14)
+    ```
 
 - **Results Evaluation Strategy**  
     Used accuracies as the metric to evaluate the performance of the models. Accuracy = (total images or sum label predicted correctly) / (total training/test length)
