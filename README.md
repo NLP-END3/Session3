@@ -35,10 +35,10 @@
 ## Solution & Discussion
 - **Two notebooks (trained using GPU) with results**
 
-    | Methods        | Notebook           | Results: Accuracies  |
-    |:----------------------------: |:---------------------:| :--------|
-    | Convolutional Layers with Fully connected Layer | [Convolutional Layers + FC](Session3_Pytorch101_ver3.ipynb) |  Image  = 99% and Sum Label  = 99% |
-    | Fully connected Layers only | [Fully Connected Layers](Session3_Pytorch101_ver4_2Methods.ipynb) | Image Label = 98% and Sum Label = 97% |
+    | Methods        | Notebook      | Hyperparameters: Optimizer,Learning_rate  |  Results: Accuracies  |
+    |:----------------------------: |:---------------------:|:---------------------:| :--------|
+    | Convolutional Layers with Fully connected Layer | [Convolutional Layers + FC](Session3_Pytorch101_ver3.ipynb) |Optimizer=SGD, Learning_rate = 0.1, epochs = 20, batch_size = 100|  Image  = 99% and Sum Label  = 99% |
+    | Fully connected Layers only | [Fully Connected Layers](Session3_Pytorch101_ver4_2Methods.ipynb) |Optimizer=Adam, Learning_rate = 0.01, epochs = 20, batch_size = 100| Image Label = 98% and Sum Label = 97% |
 
 - **Two methods were tried in this study (with details of how the two inputs are combined)**
 
