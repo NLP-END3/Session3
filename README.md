@@ -10,7 +10,8 @@
 2. and gives two outputs:  
     1. the "number" that was represented by the MNIST image (predict 5), and  
     2. the "sum" of this number with the random number and the input image to the network (predict 5 + 7 = 12)
-    <img src="./images/assign-1.png" alt="assignment_network" width="500"/>
+    <img src="https://user-images.githubusercontent.com/30425824/138210916-3ab38f38-6508-4a48-a4aa-5c5ef31d9e0f.png" width="500"/>
+
 3. you can mix fully connected layers and convolution layers  
 4. you can use one-hot encoding to represent the random number input as well as the "summed" output.  
     a. Random number (7) can be represented as 0 0 0 0 0 0 0 1 0 0  
@@ -48,7 +49,7 @@
 
     b. Method2: Neural Network with **Only Fully Connected Layers** 
 
-    <img src="https://user-images.githubusercontent.com/30425824/137449271-de53444e-df92-4e8c-b580-3ff8f61c7592.png" alt="Method2" width="800"/>
+    <img src="https://user-images.githubusercontent.com/30425824/138210579-ff8ab2e0-7154-4c36-a596-9a50e0cff41c.png" alt="Method2" width="800"/>
 
 - **Data Representation**   
 
